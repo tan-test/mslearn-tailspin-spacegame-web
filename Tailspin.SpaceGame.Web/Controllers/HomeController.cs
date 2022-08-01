@@ -10,7 +10,7 @@ namespace TailSpin.SpaceGame.Web.Controllers
 {
     public class HomeController : Controller
     {
-        private string DBPasswordString = "123Test";
+        private string DBPasswordString = "AKIAIOSFODNN7EXAMPLE";
         // High score repository.
         private readonly IDocumentDBRepository<Score> _scoreRepository;
         // User profile repository.
