@@ -62,15 +62,15 @@ stages:
         failOnIssues: true
         organization: 'tantran79'
 
-    # # Run Gitleaks on Source Repository
-    # - task: Gitleaks@2
-    #   inputs:
-    #     scanlocation: '$(Build.SourcesDirectory)'
-    #     scanmode: 'all'
-    #     verbose: 'true'
-    #     configtype: 'predefined'
-    #     predefinedconfigfile: 'GitleaksUdmCombo.toml'
-    #     reportformat: 'sarif'
+    # Run Gitleaks on Source Repository
+    - task: Gitleaks@2
+      inputs:
+        scanlocation: '$(Build.SourcesDirectory)'
+        scanmode: 'all'
+        verbose: 'true'
+        configtype: 'predefined'
+        predefinedconfigfile: 'GitleaksUdmCombo.toml'
+        reportformat: 'sarif'
 
     - task: DotNetCoreCLI@2
       displayName: 'Publish the project - $(buildConfiguration)'
