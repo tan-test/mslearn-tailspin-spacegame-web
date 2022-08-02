@@ -10,6 +10,9 @@ namespace TailSpin.SpaceGame.Web.Controllers
 {
     public class HomeController : Controller
     {
+        // AWS secret key - TODO to be removed
+        // private string AWSSecretKey = "AKIAIOSFODNN7EXAMPLE";
+
         // High score repository.
         private readonly IDocumentDBRepository<Score> _scoreRepository;
         // User profile repository.
