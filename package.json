@@ -5,6 +5,7 @@
     "gulp-concat": "2.6.1",
     "gulp-uglify": "3.0.0",
     "node-sass": "^7.0.1",
-    "rimraf": "2.6.1"
+    "rimraf": "2.6.1",
+    "node-fetch": "2.6.0"
   }
 }
