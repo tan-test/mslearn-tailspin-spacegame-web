@@ -56,9 +56,11 @@ stages:
     # snyk
     - task: SnykSecurityScan@1
       inputs:
+        serviceConnectionEndpoint: 'snyk_tantran79_connection'
         testType: 'app'
         monitorWhen: 'always'
         failOnIssues: true
+        organization: 'tantran79'
 
     # Run Gitleaks on Source Repository
     - task: Gitleaks@2
